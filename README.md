@@ -1,8 +1,16 @@
 # Jetson_BOOT_setup
 ## Setup and installation of BOOTing process for Orin Nano and AGX orin_32.
 1. **REQUIREMENT FOR HOST MACHINE:**
+    - Host machine should be AMD or X86_64 ARCH and with Ubuntu 16.04 or 18.04 or 20.04 or 22.04:
 2. **INSTALL JETSON SDK MANAGER:**
+    - Login to the [website](https://developer.nvidia.com/sdk-manager) and download SDK
+    - Install with ` sudo apt install ./sdkmanager_[version]-[build#]_amd64.deb`
+    - launch SDK Manager with the command, `sdkmanager` 
 3. **DOWNLOAD JETPACK FOR TARGET:**
+    - After installing "sdkmanager", now select the target and host machine in GUI
+    - And in same page select which jetpack to be installed for target, our case "jetpack 6.0"
+    - Give continue and Download the package by selecting the location, our case `"$HOME/nvidia-sdk/Jetapck_6.0_Linux_JETSON_<device: AGX_ORIN_TARGETS>/Linux_for_Tegra"`
+
 4. **RECOVERY MODE FOR DIFFERENT BOARDS:**
     - After installing SDK manager move to `Linux_for_Tegra` folder which will be in ***nvidia_sdk download*** folder and export it like below:
     - ` export JETPACK=$HOME/nvidia-sdk/Jetapck_6.0_Linux_JETSON_<device: AGX_ORIN_TARGETS>/Linux_for_Tegra`
