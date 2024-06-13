@@ -15,15 +15,15 @@
     - After installing SDK manager move to `Linux_for_Tegra` folder which will be in ***nvidia_sdk download*** folder and export it like below:
     - ` export JETPACK=$HOME/nvidia-sdk/Jetapck_6.0_Linux_JETSON_<device: AGX_ORIN_TARGETS>/Linux_for_Tegra`
     -  for jetson AGX orin 32 Devkit:
-        <li>Plug in the power supply in Jetson AGX Orin Developer Kit in 4 (USB Type-C port)</li>
-        <li>Power off using power button.</li>
-        <li>Plug in the USB C in the USBC port next to 40-pin connector.</li>
-        <li>Press and hold down the Force Recovery button.</li>
-        <li>Press, then release the Power button</li>
-        <li>Release the Force Recovery button </li> 
-        ![wire setup for AGX orin](Jetson_BOOT_setup\AGX_orin.jpeg)
+        * Plug in the power supply in Jetson AGX Orin Developer Kit in 4 (USB Type-C port)</li>
+        * Power off using power button.</li>
+        * Plug in the USB C in the USBC port next to 40-pin connector.</li>
+        * Press and hold down the Force Recovery button.</li>
+        * Press, then release the Power button</li>
+        * Release the Force Recovery button </li> 
+        ![wire setup for AGX orin](https://github.com/Sgiriarun/Jetson_BOOT_setup/blob/main/AGX_orin.jpeg)
     - for jetson orin nano with jumper from “FC REC” to “GND”</li>
-        ![wire setup for orin nano](Jetson_BOOT_setup\Orin_Nano_devkit_recovery_mode.png)
+        ![wire setup for orin nano](https://github.com/Sgiriarun/Jetson_BOOT_setup/blob/main/Orin_Nano_devkit_recovery_mode.png)
 5. **INSTALATION IN TARGET MACHINE:**
     - After connecting the usb and  power recovery mode use below to code snippets to
     - ` lsusb ` to list usb added and check `Bus 001 Device 015: ID xxx:xxx NVIDIS Corp. Tegra On-Platform Operation`.
